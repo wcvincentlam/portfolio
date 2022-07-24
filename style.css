@@ -508,12 +508,6 @@ header {
         transform: rotate(-90deg);
     }
 
-    .nav:hover .nav__item {
-        opacity: 100%;
-        transform: translateX(0);
-        background-color: var(--clr-gray);
-    }
-
     .nav-open .nav__item {
         opacity: 100%;
         transform: translateX(0);
