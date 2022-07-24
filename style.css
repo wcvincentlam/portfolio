@@ -368,12 +368,13 @@ header {
 }
 
 .description h3 {
+    font-size: 20px;
     text-decoration: underline;
 }
 
 .description__text {
     cursor: default;
-    font-size: var(--fs-body);
+    font-size: 15px;
     width: 100%;
     white-space: initial;
     margin-top: -2em;
