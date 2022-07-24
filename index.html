@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vincent Lam Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+SC:wght@300&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h3>&lt v .<span>l</span> &gt</h3>
+        </div>
+        <nav class= "nav">  
+            <div class="nav__list--m" ><i class="fa-solid fa-bars fa-2xl" id="nav-toggle"></i></div>
+            <ul class= "nav__list">
+                <li class="nav__item"><a href="#home" class ="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#about" class ="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="#work" class ="nav__link">My Work</a></li>
+                <li class="nav__item"><a href="#footer" class ="nav__link">Contact</a></li>            
+            </ul>
+        </nav>
+    </header> 
+
+    <!--Basic Intro-->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi there! I'm <strong> Vincent.</strong>
+        </h1>
+        <p class = "section__subtitle section__subtitle--intro">
+            <i>An aspiring front-end developer with a strong dedication to learning and building things that matter.</i>
+        </p>
+        <div class="svg-wrappers">
+            <div>
+            <svg viewbox="0 0 1000 1000" preserveAspectRatio="xminymin">
+                <path class="svg-wrapper1" d="M0 300 V100 Q300 170 550 100 T1000 110 V300z" />
+                <path class="svg-wrapper2" fill-opacity ="0.5" d="M0 200 V120 Q200 70 400 150 T1000 110 V200z" /></svg>
+        </div>
+    </section>
+
+    <!--About Me-->
+    <section class="about_me" id="about">
+        <div class="about__card">
+            <h2 class="section__title section__title--about">
+                A Little About Me
+            </h2>
+            <p class = "section__subtitle section__subtitle--about">
+                I love coding! The sense of accomplishment it gives when creating something from scratch - it's very addictive!<br><br>
+                Graduating with a degree in Finance, I joined the workforce into accounting, and it just didn't feel right. 
+                I looked back and thought to myself: "which courses did I enjoy the most in college?" CMPT101! <br><br>
+                That's when I started taking courses online to learn coding. This journey taught me many lessons, 
+                the most valuable ones being <b>self-discipline</b> and how to <b>solve problems</b> on your own. (Google!) </p>
+            <h2 class="section__title section__title--about">Skills I've Acquired</h2>
+            <div class = "section__subtitle section__subtitle--about">
+                <ul class="skills-list">
+                    <li class="skills-list__item"><i class="fa-brands fa-html5"><span>HTML 5</span></i></li>
+                    <li class="skills-list__item"><i class="fa-brands fa-css3-alt"><span>CSS 3</span></i></li>
+                    <li class="skills-list__item"><i class="fa-brands fa-js-square"><span>JavaScript</span></i></li>
+                    <li class="skills-list__item"><i class="fa-brands fa-bootstrap"><span>Bootstrap</span></i></li>
+                </ul>
+            </div>
+            <h2 class="section__title section__title--about">Learning In Progress</h2>
+                <ul class="skills-list">
+                    <li class="skills-list__item"><i class="fa-brands fa-react"><span>React</span></i></li>
+                    <li class="skills-list__item"><i class="fa-brands fa-vuejs"><span>Vue JS</span></i></li>
+                    <li class="skills-list__item"><i class="fa-brands fa-node-js"><span>Node JS</span></i></li>
+                </ul>
+            </div>
+    </section>
+
+    <!--My Work-->
+    <section class="my_work" id="work">
+        <h2 class="section__title section__title--work">My Work</h2>
+        <div class ="portfolio">
+            <!--Portfolio work 1-->
+            
+            <div class="portfolio__item">
+                <div class="description"><h3>Portfolio Landing Page</h3>
+                    <div class="description__text">
+                        <p>A fun project for experimenting with UI/UX concepts. The biggest challenge was making the page responsive. 
+                            Definitely looking forward to keep updating my portfolio down the path!
+                        </p>
+                    </div>
+                    <div class="description__btn">
+                        <a href="#" target="_blank">Demo</a>
+                        <a href="#" target="_blank">Code</a>
+                    </div>
+                </div>
+                <img src="assets/Portfolio1.png" alt="Portfolio 1"class="portfolio__img">
+            </div>
+
+            <!--Portfolio work 2-->
+            <div class="portfolio__item">
+                <div class="description"><h3>A Game for My Niece</h3>
+                    <div class="description__text">
+                        <p>A game created for my niece using Vanilla JavaScript to create all the game logic. 
+                            Result: she loved this game, just as much as I enjoyed writing it!
+                        </p>
+                    </div>
+                    <div class="description__btn">
+                        <a href="https://wingcv.github.io/RPS-game" target="_blank">Demo</a>
+                        <a href="https://github.com/wingcv/RPS-game" target="_blank">Code</a>
+                    </div>
+                </div>
+                <img src="assets/Portfolio2.png" alt="Portfolio 2" class="portfolio__img">
+            </div>
+
+            <!--Portfolio work 3-->
+            <div class="portfolio__item">
+                <div class="description"><h3>To Do List with local storage</h3>
+                    <div class="description__text">
+                        <p>A to-do list with the ability to filter by completed tasks. 
+                            Supports keyboard functions such as enter to add to list, and all stored to local storage.
+                        </p>
+                    </div>
+                    <div class="description__btn">
+                        <a href="https://wingcv.github.io/todolist/" target="_blank">Demo</a>
+                        <a href="https://github.com/wingcv/todolist" target="_blank">Code</a>
+                    </div>
+                </div>
+                <img src="assets/Portfolio3.png" alt="Portfolio 3" class="portfolio__img">
+            </div>
+        </div> 
+    </section>
+
+    <!--Footer-->
+    <footer class="footer" id="footer">
+        <h2 class="section__title section__title--about">
+            Contact Me
+        </h2>
+        <a href="mailto:wcvincentlam@outlook.com" target="_blank" class="footer__link">wcvincentlam@outlook.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.freecodecamp.org/vincentl" target="_blank">
+                    <i class="fa-brands fa-free-code-camp"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link"  href="https://twitter.com/VincentWC_" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/wingcv" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.linkedin.com/in/wcvincentlam/" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </li>
+        </ul>
+            <svg class="svg-footer" viewbox="0 0 100 25" preserveAspectRatio="none">
+              <path d="M0 30 V12 Q30 17 55 12 T100 11 V30z" />
+              </svg>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
