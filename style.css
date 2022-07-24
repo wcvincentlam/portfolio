@@ -73,9 +73,9 @@ h1,h2,h3 {
     margin: 1;
 }
 
-h1 { font-size: var(--fs-h1);}
-h2 { font-size: var(--fs-h2);}
-h3 { font-size: var(--fs-h3);}
+h1 { font-size: var(--fs-h1)}
+h2 { font-size: var(--fs-h2)}
+h3 { font-size: var(--fs-h3)}
 
 .section__title {
     color: var(--clr-accent);
@@ -111,6 +111,8 @@ h3 { font-size: var(--fs-h3);}
 }
 
 .logo h3 span {
+    font-family: 'Alex Brush', cursive;
+    font-size: 35px;
     display: inline-block;
     margin-left: 4px;
     margin-right: 4px;
@@ -149,7 +151,7 @@ header {
 
 .nav__link:hover {
     opacity: 90%;
-    transform: scale(10,10);
+    transform: scale(1.1,1.1);
     color: var(--clr-accent);
 }
 
@@ -158,7 +160,10 @@ header {
     display: none;
 }
 
-
+.content {
+    margin: 0;
+    padding: 0;
+}
 
 /* Intro section */
 
@@ -260,7 +265,7 @@ header {
 }
 
 
-.skills-list__item span{display: none;}
+.skills-list__item span{display: none}
 
 .skills-list__item:hover span{ /*the span will display just on :hover state*/
     display:block;
@@ -468,7 +473,7 @@ header {
         --fs-h1: 2rem;
         --fs-h2: 1.5rem;
         --fs-h3: 1.25rem;
-        --fs-body: 1rem;
+        --fs-body: 0.7rem;
     }
     .intro {
         padding-top: 5em;
@@ -482,7 +487,15 @@ header {
         display:block;
     }
 
+    .nav__list {
+        width: 10em;
+    }
+
     .nav__item {
+        top:0;
+        bottom: 0;
+        padding: 0;
+        height: 3em;
         opacity: 0;
         display: block;
         transition: all 0.2s ease-in-out;
@@ -503,9 +516,10 @@ header {
         transition: all 0.2s ease-in-out;
     }
 
-    .nav-open #nav-toggle, .nav:hover #nav-toggle, #nav-toggle:hover {
-        color: var(--clr-accent);
-        transform: rotate(-90deg);
+    .nav-open #nav-toggle {
+        color: var(--clr-dark);
+        transform: rotate(-90deg) scale(0.9);
+        opacity: 70%;
     }
 
     .nav-open .nav__item {
@@ -513,6 +527,15 @@ header {
         transform: translateX(0);
         background-color: var(--clr-gray);
     }
+    .nav__link {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding-top: 10px;
+    }
+
+    .nav__link:hover {
+        color: var(--clr-light);
+        background-color:var(--clr-accent);
+    }
 }
-
-
