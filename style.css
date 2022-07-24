@@ -526,6 +526,7 @@ header {
         opacity: 100%;
         transform: translateX(0);
         background-color: var(--clr-gray);
+        margin-bottom: -0.5px;
     }
     .nav__link {
         display: block;
